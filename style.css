@@ -54,33 +54,38 @@ section #my-life {
   width: 1200px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
-  margin-bottom: 20px;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
   margin: 0 auto;
   margin-bottom: 30px;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 20px;
+  background-color: white;
 }
 
 section #my-life #life-img {
   width: 500px;
   height: 500px;
   background-image: url(./img/LIFE-1.jpg);
+  background-size: cover;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
 }
 
 section #my-life #life-content {
-  padding: 0 120px;
+  padding: 0 60px;
 }
 
 section #my-life #life-content h2 {
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 30px;
+}
+
+section #my-life #life-content ul li a {
+  text-decoration: none;
 }
 
 section #my-life #life-content p {
@@ -93,13 +98,13 @@ section #my-focus {
   display: grid;
   -ms-grid-columns: 57% 43%;
       grid-template-columns: 57% 43%;
-  margin-bottom: 20px;
   margin: 0 auto;
   margin-bottom: 30px;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 20px;
+  background-color: white;
 }
 
 section #my-focus #life-img {
@@ -111,7 +116,7 @@ section #my-focus #life-img {
 }
 
 section #my-focus #life-content {
-  padding: 0 120px;
+  padding: 0 60px;
 }
 
 section #my-focus #life-content h2 {
