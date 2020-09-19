@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap");
+
+// 主色系
+$main_color: #e9967a;
+//標題用字體
+$main_title: "Noto Sans TC", sans-serif;
+//文章用字體
+// $main_content: 'Noto Sans TC', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    /* border: 0.01px solid rgba(0,0,0,0.01); */
+}
+// 導覽頁
+#card {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/my_index2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -90px;
+    color: white;
+    #content {
+        position: relative;
+        top: 300px;
+        left: 200px;
+        width: 600px;
+        transition: 0.3s;
+        // &:hover {
+        //     color: white;
+        //}
+        h2 {
+            font-size: 40px;
+            // font-family:$main_content ;
+        }
+        hr {
+            width: 560px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            // font-family: $main_content;
+        }
+    }
+}
+
+// 生活故事
+section {
+    width: 100%;
+    height: 150vh;
+    margin-top: 100px;
+    #my-life {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        // border:5px #FFAC55 solid;
+        box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        padding: 20px;
+
+        
+        #life-img {
+            width: 500px;
+            height: 500px;
+            background-image: url(./img/LIFE-1.jpg);
+           
+            box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+            
+            
+        }
+        #life-content {
+            padding: 0 120px;
+
+            h2 {
+                text-align: center;
+                font-family: $main_title;
+                font-size: 30px;
+            }
+            p {
+                font-family: $main_title;
+            }
+        }
+    }
+
+    #my-focus {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 57% 43%;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        // border:5px #FFAC55 solid;
+        box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        padding: 20px;
+
+        
+        #life-img {
+            width: 500px;
+            height: 500px;
+            background-image: url(./img/LIFE-1.jpg);
+           
+            box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+            
+            
+        }
+        #life-content {
+            padding: 0 120px;
+
+            h2 {
+                text-align: center;
+                font-family: $main_title;
+                font-size: 30px;
+            }
+            p {
+                font-family: $main_title;
+            }
+        }
+    }
+    
+}
