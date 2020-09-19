@@ -81,14 +81,26 @@ section #my-life #life-content {
 section #my-life #life-content h2 {
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 30px;
+  font-size: 36px;
+}
+
+section #my-life #life-content ul {
+  margin-top: 10px;
+}
+
+section #my-life #life-content ul li {
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 section #my-life #life-content ul li a {
   text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 section #my-life #life-content p {
+  margin-top: 50px;
+  line-height: 30px;
+  font-size: 18px;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -122,10 +134,13 @@ section #my-focus #life-content {
 section #my-focus #life-content h2 {
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 30px;
+  font-size: 36px;
 }
 
 section #my-focus #life-content p {
+  margin-top: 30px;
+  line-height: 30px;
   font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
