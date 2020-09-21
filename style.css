@@ -143,4 +143,64 @@ section #my-focus #life-content p {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 18px;
 }
+
+#introduction {
+  width: 600px;
+  height: 600px;
+}
+
+#introduction #introduction-img {
+  width: 200px;
+  height: 200px;
+  background-image: url(./img/me-1.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 50px;
+}
+
+#introduction #card-left h3 {
+  color: black;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 36px;
+  margin: 0 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#introduction #card-left h3:hover {
+  -webkit-filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+          filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+}
+
+#introduction #card-left h1 {
+  color: black;
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 48px;
+}
+
+#introduction #card-left h1:hover {
+  -webkit-filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+          filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+}
+
+#introduction #card-left #connection {
+  position: relative;
+  left: 70px;
+}
+
+#introduction #card-left #connection a img {
+  width: 50px;
+  margin-left: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#introduction #card-left #connection a img:hover {
+  -webkit-filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+          filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap");
 
 // 主色系
-$main_color: #693f33;
+// RGB 165,65,37 =##A84125
+$main_color: rgb(165, 65, 37);
 //標題用字體
 $main_title: "Noto Sans TC", sans-serif;
 //文章用字體
@@ -32,16 +33,13 @@ $main_title: "Noto Sans TC", sans-serif;
         left: 200px;
         width: 600px;
         transition: 0.3s;
-        
+
         // &:hover {
         //     color: white;
         //}
         h2 {
             font-size: 40px;
             // font-family:$main_content ;
-            
-            
-            
         }
         hr {
             width: 560px;
@@ -51,8 +49,7 @@ $main_title: "Noto Sans TC", sans-serif;
         p {
             font-size: 24px;
             font-weight: bold;
-            
-            
+
             // font-family: $main_content;
         }
     }
@@ -142,6 +139,62 @@ section {
                 line-height: 30px;
                 font-family: $main_title;
                 font-size: 18px;
+            }
+        }
+    }
+}
+
+//作品集頁面
+#introduction {
+    width: 600px;
+    height: 600px;
+    // border:5px #FFAC55 solid;
+    #introduction-img {
+        width: 200px;
+        height: 200px;
+        background-image: url(./img/me-1.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        margin: 0 50px;
+    }
+    #card-left {
+        h3 {
+            color: black;
+            font-family: $main_title;
+            font-size: 36px;
+            margin: 0 80px;
+            transition: 0.5s;
+            
+            
+            &:hover{
+                filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+            }
+        }
+        h1 {
+            color: black;
+            font-family: $main_title;
+            margin: 0 80px;
+            transition: 0.5s;
+            
+            font-size: 48px;
+            &:hover{
+                filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+            }
+        }
+        #connection {
+            position: relative;
+            left:70px;
+            a {
+                img {
+                    width: 50px;
+                    
+                    margin-left: 10px;
+                    transition: 0.5s;
+                    &:hover{
+                        filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+                    }
+                }
             }
         }
     }
