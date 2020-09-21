@@ -146,6 +146,7 @@ section #my-focus #life-content p {
 
 #introduction {
   height: 500px;
+  margin: 0 80px;
 }
 
 #introduction #introduction-img {
@@ -155,7 +156,6 @@ section #my-focus #life-content p {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
-  margin: 0 60px;
   margin-bottom: 20px;
 }
 
@@ -163,7 +163,6 @@ section #my-focus #life-content p {
   color: black;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 36px;
-  margin: 0 80px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -176,7 +175,6 @@ section #my-focus #life-content p {
 #introduction #card-left h1 {
   color: black;
   font-family: "Noto Sans TC", sans-serif;
-  margin: 0 80px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-size: 40px;
@@ -187,14 +185,8 @@ section #my-focus #life-content p {
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
 }
 
-#introduction #card-left #connection {
-  position: relative;
-  left: 70px;
-}
-
 #introduction #card-left #connection a img {
   width: 50px;
-  margin-left: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
