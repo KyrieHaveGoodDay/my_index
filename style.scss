@@ -146,17 +146,18 @@ section {
 
 //作品集頁面
 #introduction {
-    width: 600px;
-    height: 600px;
+    
+    height: 500px;
     // border:5px #FFAC55 solid;
     #introduction-img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         background-image: url(./img/me-1.PNG);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 50%;
-        margin: 0 50px;
+        margin: 0 60px;
+        margin-bottom: 20px;
     }
     #card-left {
         h3 {
@@ -177,7 +178,7 @@ section {
             margin: 0 80px;
             transition: 0.5s;
             
-            font-size: 48px;
+            font-size: 40px;
             &:hover{
                 filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
             }
