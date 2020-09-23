@@ -16,7 +16,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0 -90px;
   color: white;
 }
 
@@ -145,7 +144,6 @@ section #my-focus #life-content p {
 }
 
 #introduction {
-  height: 500px;
   margin: 0 80px;
 }
 
@@ -165,6 +163,7 @@ section #my-focus #life-content p {
   font-size: 36px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  display: inline;
 }
 
 #introduction #card-left h3:hover {
@@ -177,6 +176,7 @@ section #my-focus #life-content p {
   font-family: "Noto Sans TC", sans-serif;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  display: inline;
   font-size: 40px;
 }
 
@@ -194,5 +194,24 @@ section #my-focus #life-content p {
 #introduction #card-left #connection a img:hover {
   -webkit-filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+}
+
+#title {
+  word-spacing: 50px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+#title a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+}
+
+#title a:hover {
+  color: #a54125;
 }
 /*# sourceMappingURL=style.css.map */
