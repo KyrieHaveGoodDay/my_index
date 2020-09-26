@@ -56,7 +56,7 @@ $main_title: "Noto Sans TC", sans-serif;
 }
 
 // 生活故事
-section {
+#life {
     width: 100%;
     height: 150vh;
     margin-top: 100px;
@@ -219,6 +219,7 @@ section {
     }
 }
 
+// RWD-手機
 @media screen and (max-width: 767px) {
     * {
         margin: 0;
@@ -226,7 +227,7 @@ section {
     }
     #card {
         width: 100%;
-        height: 100vh;
+        height: 320px;
         background-image: url(./img/my_index2.png);
         background-size:  50%;
         background-repeat: no-repeat;
@@ -260,4 +261,16 @@ section {
             }
         }
     }
+    
+
+    // RWD從這邊開始
+   #life{
+       #my-life{
+           
+           #life-img{
+               width: 100%;
+               height: 300px;
+           }
+       }
+   }
 }

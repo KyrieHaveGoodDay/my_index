@@ -43,13 +43,13 @@
   font-weight: bold;
 }
 
-section {
+#life {
   width: 100%;
   height: 150vh;
   margin-top: 100px;
 }
 
-section #my-life {
+#life #my-life {
   width: 1200px;
   display: -ms-grid;
   display: grid;
@@ -64,7 +64,7 @@ section #my-life {
   background-color: white;
 }
 
-section #my-life #life-img {
+#life #my-life #life-img {
   width: 500px;
   height: 500px;
   background-image: url(./img/LIFE-1.jpg);
@@ -73,37 +73,37 @@ section #my-life #life-img {
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
 }
 
-section #my-life #life-content {
+#life #my-life #life-content {
   padding: 0 60px;
 }
 
-section #my-life #life-content h2 {
+#life #my-life #life-content h2 {
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 36px;
 }
 
-section #my-life #life-content ul {
+#life #my-life #life-content ul {
   margin-top: 10px;
 }
 
-section #my-life #life-content ul li {
+#life #my-life #life-content ul li {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-section #my-life #life-content ul li a {
+#life #my-life #life-content ul li a {
   text-decoration: none;
   font-family: "Noto Sans TC", sans-serif;
 }
 
-section #my-life #life-content p {
+#life #my-life #life-content p {
   margin-top: 50px;
   line-height: 30px;
   font-size: 18px;
   font-family: "Noto Sans TC", sans-serif;
 }
 
-section #my-focus {
+#life #my-focus {
   width: 1200px;
   display: -ms-grid;
   display: grid;
@@ -118,7 +118,7 @@ section #my-focus {
   background-color: white;
 }
 
-section #my-focus #life-img {
+#life #my-focus #life-img {
   width: 500px;
   height: 500px;
   background-image: url(./img/LIFE-1.jpg);
@@ -126,17 +126,17 @@ section #my-focus #life-img {
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
 }
 
-section #my-focus #life-content {
+#life #my-focus #life-content {
   padding: 0 60px;
 }
 
-section #my-focus #life-content h2 {
+#life #my-focus #life-content h2 {
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 36px;
 }
 
-section #my-focus #life-content p {
+#life #my-focus #life-content p {
   margin-top: 30px;
   line-height: 30px;
   font-family: "Noto Sans TC", sans-serif;
@@ -222,7 +222,7 @@ section #my-focus #life-content p {
   }
   #card {
     width: 100%;
-    height: 100vh;
+    height: 320px;
     background-image: url(./img/my_index2.png);
     background-size: 50%;
     background-repeat: no-repeat;
@@ -246,6 +246,10 @@ section #my-focus #life-content p {
   #card #content p {
     font-size: 10px;
     font-weight: bold;
+  }
+  #life #my-life #life-img {
+    width: 100%;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
