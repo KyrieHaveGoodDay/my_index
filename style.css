@@ -145,6 +145,7 @@
 
 #introduction {
   margin: 0 80px;
+  background: white;
 }
 
 #introduction #introduction-img {
@@ -213,6 +214,13 @@
 
 #title a:hover {
   color: #a54125;
+}
+
+#graphic {
+  width: 1200px;
+  height: 100vh;
+  background: #eee;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
