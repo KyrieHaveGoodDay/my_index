@@ -16,8 +16,6 @@ $main_title: "Noto Sans TC", sans-serif;
     /* border: 0.01px solid rgba(0,0,0,0.01); */
 }
 
-
-
 // 導覽頁
 #card {
     width: 100%;
@@ -221,8 +219,8 @@ section {
     }
 }
 
-@media screen and (max-width:767px){
-    *{
+@media screen and (max-width: 767px) {
+    * {
         margin: 0;
         padding: 0;
     }
@@ -230,36 +228,36 @@ section {
         width: 100%;
         height: 100vh;
         background-image: url(./img/my_index2.png);
-        background-size: 100% 400px;
+        background-size: 400px 200px;
         background-repeat: no-repeat;
         background-attachment: fixed;
         //background-position: 0 -1px;
         color: white;
-    
+
         #content {
             position: relative;
-            top: 150px;
-            left: 90px;
-            width: 600px;
+            top: 80px;
+            left: 40px;
+            width: 300px;
             // transition: 0.3s;
-    
+
             // &:hover {
             //     color: white;
             //}
             h2 {
-                font-size: 20px;
+                font-size: 10px;
                 // font-family:$main_content ;
             }
             hr {
-                width: 280px;
-               margin: 10px 0;
+                width: 200px;
+                margin: 10px 0;
             }
             p {
-                font-size: 12px;
+                font-size: 10px;
                 font-weight: bold;
-    
+
                 // font-family: $main_content;
             }
         }
     }
-  }
+}
