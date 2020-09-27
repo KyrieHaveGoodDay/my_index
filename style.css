@@ -216,13 +216,6 @@
   color: #a54125;
 }
 
-#graphic {
-  width: 1200px;
-  height: 100vh;
-  background: #eee;
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 767px) {
   * {
     margin: 0;
@@ -282,12 +275,12 @@
     font-size: 30px;
   }
   #life #my-life #life-content ul li {
-    font-size: 10px;
+    font-size: 14px;
     padding: 10px;
   }
   #life #my-life #life-content p {
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 14px;
     padding: 10px;
   }
   #life #my-focus {
