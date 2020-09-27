@@ -13,7 +13,7 @@ $main_title: "Noto Sans TC", sans-serif;
     padding: 0;
     box-sizing: border-box;
     font-family: 微軟正黑體;
-    
+
     /* border: 0.01px solid rgba(0,0,0,0.01); */
 }
 
@@ -216,7 +216,6 @@ $main_title: "Noto Sans TC", sans-serif;
         font-size: 24px;
 
         &:hover {
-            
             color: $main_color;
         }
     }
@@ -229,7 +228,6 @@ $main_title: "Noto Sans TC", sans-serif;
     margin: 0 auto;
 }
 
-
 // RWD-手機
 @media screen and (max-width: 767px) {
     * {
@@ -237,18 +235,19 @@ $main_title: "Noto Sans TC", sans-serif;
         padding: 0;
     }
     #card {
-        width: 100%;
-        height: 320px;
+        // width: 100%;
+        // height: 100vh;
+        height: 200px;
         background-image: url(./img/my_index2.png);
-        background-size:  50%;
+        background-size:100% ; // 照片尺寸需要修改
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: -100PX 0;
+        // background-position: -100px 0;
         color: white;
 
         #content {
             position: relative;
-            top: 150px;
+            top: 80px;
             left: 40px;
             width: 300px;
             // transition: 0.3s;
@@ -272,16 +271,73 @@ $main_title: "Noto Sans TC", sans-serif;
             }
         }
     }
-    
 
-    // RWD從這邊開始
-   #life{
-       #my-life{
-           
-           #life-img{
-               width: 100%;
-               height: 300px;
-           }
-       }
-   }
+    
+    #life {
+        margin-top: 20px;
+        
+        // 第一格卡片
+        #my-life {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 6px;
+            margin-bottom: 30px;
+            
+            padding: 0;
+            #life-img {
+                width: 90%;
+                height: 300px;
+                background-size: cover;
+                margin: 0 auto;
+            }
+            #life-content {
+                margin: 0;
+                padding: 0;
+                h2 {
+                    text-align-last: center;
+                    font-size: 30px;
+                    
+                }
+                ul {
+                    li {
+                        font-size: 10px;
+                        padding: 10px;
+                        // line-height: 20px;
+                    }
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: 10px;
+                    padding: 10px;
+                }
+            }
+        }
+        // 第二個卡片
+        #my-focus{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            #life-content{
+                margin: 0;
+                padding: 0;
+                h2{
+                    font-size: 30px;
+                    text-align: left;
+                }
+                p{
+                    font-size: 14px;
+                }
+                
+            }
+            #life-img{
+                width: 90%;
+                height: 300px;
+                background-size: cover;
+                margin: 0 auto;
+
+            }
+        }
+    }
+    
 }
