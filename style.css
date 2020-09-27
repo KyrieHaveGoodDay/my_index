@@ -256,7 +256,6 @@
     display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    margin: 0 6px;
     margin-bottom: 30px;
     padding: 0;
   }
