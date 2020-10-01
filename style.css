@@ -146,6 +146,10 @@
 #introduction {
   margin: 0 80px;
   background: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 #introduction #introduction-img {
@@ -172,6 +176,12 @@
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
 }
 
+#introduction #card-left #symbol {
+  font-size: 30px;
+  margin-left: 85px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 #introduction #card-left h1 {
   color: black;
   font-family: "Noto Sans TC", sans-serif;
@@ -186,6 +196,10 @@
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
 }
 
+#introduction #card-left #connection {
+  margin-top: 10px;
+}
+
 #introduction #card-left #connection a img {
   width: 50px;
   -webkit-transition: 0.5s;
@@ -195,6 +209,29 @@
 #introduction #card-left #connection a img:hover {
   -webkit-filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+}
+
+#introduction #card-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+}
+
+#introduction #card-right #card-img img {
+  width: 600px;
+  height: 450px;
+  -webkit-transform: translate(100px, 50px);
+          transform: translate(100px, 50px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#introduction #card-right #card-bg {
+  width: 350px;
+  height: 450px;
+  background-color: #6fa3ce;
 }
 
 #title {

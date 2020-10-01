@@ -151,6 +151,10 @@ $main_title: "Noto Sans TC", sans-serif;
     // border:5px #FFAC55 solid;
     margin: 0 80px;
     background: white;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
     #introduction-img {
         width: 150px;
         height: 150px;
@@ -162,6 +166,7 @@ $main_title: "Noto Sans TC", sans-serif;
         margin-bottom: 20px;
     }
     #card-left {
+        
         h3 {
             color: black;
             font-family: $main_title;
@@ -172,6 +177,11 @@ $main_title: "Noto Sans TC", sans-serif;
             &:hover {
                 filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
             }
+        }
+        #symbol{
+            font-size: 30px;
+            margin-left: 85px;
+            font-family: $main_title;
         }
         h1 {
             color: black;
@@ -187,6 +197,7 @@ $main_title: "Noto Sans TC", sans-serif;
         #connection {
             // position: relative;
             // left:70px;
+            margin-top: 10px;
             a {
                 img {
                     width: 50px;
@@ -198,6 +209,26 @@ $main_title: "Noto Sans TC", sans-serif;
                     }
                 }
             }
+        }
+    }
+
+    // 右半邊設計
+    #card-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+        #card-img {
+            img {
+                width: 600px;
+                height: 450px;
+                transform: translate(100px,50px);
+                object-fit: cover;
+            }
+        }
+        #card-bg {
+            width: 350px;
+            height: 450px;
+            background-color: rgb(111, 163, 206);
         }
     }
 }
@@ -220,9 +251,9 @@ $main_title: "Noto Sans TC", sans-serif;
         }
     }
 }
+
 // 平面設計
 #work {
-   
 }
 // RWD-手機
 @media screen and (max-width: 767px) {
@@ -235,7 +266,7 @@ $main_title: "Noto Sans TC", sans-serif;
         // height: 100vh;
         height: 200px;
         background-image: url(./img/my_index2.png);
-        background-size:100% ; // 照片尺寸需要修改
+        background-size: 100%; // 照片尺寸需要修改
         background-repeat: no-repeat;
         background-attachment: fixed;
         // background-position: -100px 0;
@@ -268,10 +299,9 @@ $main_title: "Noto Sans TC", sans-serif;
         }
     }
 
-    
     #life {
         margin-top: 20px;
-        
+
         // 第一格卡片
         #my-life {
             width: 100%;
@@ -279,7 +309,7 @@ $main_title: "Noto Sans TC", sans-serif;
             grid-template-columns: repeat(1, 1fr);
             // margin: 0 6px;
             margin-bottom: 30px;
-            
+
             padding: 0;
             #life-img {
                 width: 90%;
@@ -293,7 +323,6 @@ $main_title: "Noto Sans TC", sans-serif;
                 h2 {
                     text-align-last: center;
                     font-size: 30px;
-                    
                 }
                 ul {
                     li {
@@ -302,7 +331,7 @@ $main_title: "Noto Sans TC", sans-serif;
                         // line-height: 20px;
                     }
                 }
-                p{
+                p {
                     margin-top: 10px;
                     font-size: 14px;
                     padding: 10px;
@@ -310,30 +339,27 @@ $main_title: "Noto Sans TC", sans-serif;
             }
         }
         // 第二個卡片
-        #my-focus{
+        #my-focus {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(1,1fr);
-            #life-content{
+            grid-template-columns: repeat(1, 1fr);
+            #life-content {
                 margin: 0;
                 padding: 0;
-                h2{
+                h2 {
                     font-size: 30px;
                     text-align: center;
                 }
-                p{
+                p {
                     font-size: 14px;
                 }
-                
             }
-            #life-img{
+            #life-img {
                 width: 90%;
                 height: 300px;
                 background-size: cover;
                 margin: 0 auto;
-
             }
         }
     }
-    
 }
