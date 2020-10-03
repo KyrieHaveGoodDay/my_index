@@ -229,6 +229,8 @@
 }
 
 #introduction #card-right #card-bg {
+  color: #6fa3ce;
+  font-family: "Noto Sans TC", sans-serif;
   width: 350px;
   height: 450px;
   background-color: #6fa3ce;
@@ -251,6 +253,43 @@
 
 #title a:hover {
   color: #a54125;
+}
+
+#work {
+  height: 100vh;
+  margin-top: 20px;
+}
+
+#work #graphic-design {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#work #graphic-design h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#work #graphic-design h1:hover {
+  color: #a54125;
+}
+
+#work #graphic-design #img-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#work #graphic-design #img-box img {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 767px) {

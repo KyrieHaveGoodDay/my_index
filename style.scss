@@ -166,7 +166,6 @@ $main_title: "Noto Sans TC", sans-serif;
         margin-bottom: 20px;
     }
     #card-left {
-        
         h3 {
             color: black;
             font-family: $main_title;
@@ -178,7 +177,7 @@ $main_title: "Noto Sans TC", sans-serif;
                 filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
             }
         }
-        #symbol{
+        #symbol {
             font-size: 30px;
             margin-left: 85px;
             font-family: $main_title;
@@ -221,11 +220,13 @@ $main_title: "Noto Sans TC", sans-serif;
             img {
                 width: 600px;
                 height: 450px;
-                transform: translate(100px,50px);
+                transform: translate(100px, 50px);
                 object-fit: cover;
             }
         }
         #card-bg {
+            color: rgb(111, 163, 206);
+            font-family: $main_title;
             width: 350px;
             height: 450px;
             background-color: rgb(111, 163, 206);
@@ -254,6 +255,35 @@ $main_title: "Noto Sans TC", sans-serif;
 
 // 平面設計
 #work {
+    height: 100vh;
+    margin-top: 20px;
+    #graphic-design {
+        
+        width: 1200px;
+        margin: 0 auto;
+        h1 {
+            font-family: $main_title;
+            font-size: 24px;
+            transition: 0.5s;
+            &:hover{
+                color: $main_color;
+            }
+        }
+        #img-box {
+            
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            
+            img {
+                width: 300px;
+                height: 250px;
+                margin: 10px ;
+                box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+                
+            }
+        }
+    }
 }
 // RWD-手機
 @media screen and (max-width: 767px) {
