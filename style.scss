@@ -38,21 +38,30 @@ $main_title: "Noto Sans TC", sans-serif;
         // &:hover {
         //     color: white;
         //}
-        h2 {
-            font-size: 40px;
-            // font-family:$main_content ;
+        a{
+            text-decoration: none;
+            color: white;
+            // transition: 0.5s;
+            // &:hover{
+            //     color: $main_color;
+            // }
+            h2 {
+                font-size: 40px;
+                // font-family:$main_content ;
+            }
+            hr {
+                width: 560px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 24px;
+                font-weight: bold;
+    
+                // font-family: $main_content;
+            }
         }
-        hr {
-            width: 560px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 24px;
-            font-weight: bold;
-
-            // font-family: $main_content;
-        }
+        
     }
 }
 
