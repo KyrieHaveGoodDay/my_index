@@ -627,4 +627,47 @@
           box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
+
+#official {
+  width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin: 20px auto;
+}
+
+#official #coffee {
+  text-align: center;
+}
+
+#official #coffee #coffee-img img {
+  width: 300px;
+  height: 150px;
+}
+
+#official #coffee h3 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#official #coffee h3:hover {
+  color: #a54125;
+}
+
+#official #kyrie {
+  text-align: center;
+}
+
+#official #kyrie #kyrie-img img {
+  width: 300px;
+  height: 150px;
+}
+
+#official #kyrie h3 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#official #kyrie h3:hover {
+  color: #a54125;
+}
 /*# sourceMappingURL=style.css.map */
