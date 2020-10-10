@@ -30,7 +30,6 @@ $phone: 767px;
     font-family: 微軟正黑體;
 
     /* border: 0.01px solid rgba(0,0,0,0.01); */
-    
 }
 
 // 導覽頁
@@ -50,7 +49,7 @@ $phone: 767px;
         background-size: 100%;
     }
     //手機
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $phone) {
         height: 200px;
     }
 
@@ -67,7 +66,7 @@ $phone: 767px;
             left: 50px;
         }
         //手機
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: $phone) {
             position: relative;
             top: 90px;
             left: 20px;
@@ -92,7 +91,7 @@ $phone: 767px;
                     font-size: 18px;
                 }
                 //手機
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: $phone) {
                     font-size: 10px;
                 }
             }
@@ -105,7 +104,7 @@ $phone: 767px;
                     width: 420px;
                 }
                 //手機
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: $phone) {
                     width: 170px;
                 }
             }
@@ -117,7 +116,7 @@ $phone: 767px;
                     font-size: 18px;
                 }
                 //手機
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: $phone) {
                     font-size: 10px;
                 }
             }
@@ -129,7 +128,7 @@ $phone: 767px;
 #life {
     width: 100%;
     height: 150vh;
-    margin-top: 100px;
+    margin-top: 50px;
 
     #my-life {
         width: 1200px;
@@ -148,7 +147,13 @@ $phone: 767px;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             width: 100%;
+        } 
+        //手機
+        @media screen and (max-width: $phone) {
+            width: 100%;
         }
+
+        
 
         #life-img {
             width: 500px;
@@ -161,7 +166,7 @@ $phone: 767px;
                 margin: 0 auto;
             }
             //手機
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: $phone) {
                 width: 300px;
                 height: 300px;
                 margin: 0 auto;
@@ -171,7 +176,7 @@ $phone: 767px;
             padding: 0 60px;
             // border:5px #FFAC55 solid;
             //手機
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: $phone) {
                 padding: 0 30px;
             }
             h2 {
@@ -179,7 +184,7 @@ $phone: 767px;
                 font-family: $main_title;
                 font-size: 36px;
                 //手機
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: $phone) {
                     font-size: 30px;
                     margin-top: 10px;
                 }
@@ -189,7 +194,7 @@ $phone: 767px;
                 li {
                     font-family: $main_title;
                     //手機
-                    @media screen and (max-width: 767px) {
+                    @media screen and (max-width: $phone) {
                         font-size: 16px;
                     }
                     a {
@@ -204,7 +209,7 @@ $phone: 767px;
                 font-size: 18px;
                 font-family: $main_title;
                 //手機
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: $phone) {
                     font-size: 16px;
                 }
             }
@@ -231,8 +236,8 @@ $phone: 767px;
             grid-template-columns: repeat(1, 1fr);
         }
         //手機
-        @media screen and (max-width: 767px) {
-            font-size: 16px;
+        @media screen and (max-width: $phone) {
+            
             width: 100%;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -251,7 +256,7 @@ $phone: 767px;
                 margin-top: 15px;
             }
             //手機
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: $phone) {
                 width: 300px;
                 height: 300px;
             }
@@ -260,7 +265,7 @@ $phone: 767px;
             padding: 0 60px;
             // border:5px #FFAC55 solid;
             //手機
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: $phone) {
                 padding: 0 30px;
             }
             h2 {
@@ -268,7 +273,7 @@ $phone: 767px;
                 font-family: $main_title;
                 font-size: 36px;
                 //手機
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: $phone) {
                     font-size: 30px;
                 }
             }
@@ -278,7 +283,7 @@ $phone: 767px;
                 font-family: $main_title;
                 font-size: 18px;
                 //手機
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: $phone) {
                     font-size: 16px;
                 }
             }

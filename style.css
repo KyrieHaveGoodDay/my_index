@@ -114,7 +114,7 @@
 #life {
   width: 100%;
   height: 150vh;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #life #my-life {
@@ -138,6 +138,12 @@
     display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #life #my-life {
     width: 100%;
   }
 }
@@ -247,7 +253,6 @@
 
 @media screen and (max-width: 767px) {
   #life #my-focus {
-    font-size: 16px;
     width: 100%;
     display: -ms-grid;
     display: grid;
