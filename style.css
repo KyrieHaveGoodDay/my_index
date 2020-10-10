@@ -19,13 +19,26 @@
   color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  #card {
+    height: 400px;
+    background-size: 100%;
+  }
+}
+
 #card #content {
   position: relative;
   top: 300px;
   left: 200px;
   width: 600px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  #card #content {
+    position: relative;
+    top: 180px;
+    left: 50px;
+  }
 }
 
 #card #content a {
@@ -37,15 +50,33 @@
   font-size: 40px;
 }
 
+@media screen and (max-width: 1024px) {
+  #card #content a h2 {
+    font-size: 18px;
+  }
+}
+
 #card #content a hr {
   width: 560px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  #card #content a hr {
+    width: 420px;
+  }
+}
+
 #card #content a p {
   font-size: 24px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  #card #content a p {
+    font-size: 18px;
+  }
 }
 
 #life {
@@ -69,6 +100,16 @@
   background-color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  #life #my-life {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
 #life #my-life #life-img {
   width: 500px;
   height: 500px;
@@ -76,6 +117,12 @@
   background-size: cover;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+  #life #my-life #life-img {
+    margin: 0 auto;
+  }
 }
 
 #life #my-life #life-content {
@@ -123,12 +170,29 @@
   background-color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  #life #my-focus {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 #life #my-focus #life-img {
   width: 500px;
   height: 500px;
   background-image: url(./img/LIFE-1.jpg);
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+  #life #my-focus #life-img {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
 }
 
 #life #my-focus #life-content {
@@ -443,97 +507,5 @@
   -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-}
-
-@media screen and (max-width: 767px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  #card {
-    width: 100%;
-    height: 200px;
-    background-image: url(./img/my_index2.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-  }
-  #card #content {
-    position: relative;
-    top: 80px;
-    left: 40px;
-    width: 300px;
-  }
-  #card #content h2 {
-    font-size: 10px;
-  }
-  #card #content hr {
-    width: 200px;
-    margin-top: 1px;
-  }
-  #card #content p {
-    font-size: 10px;
-    font-weight: bold;
-  }
-  #life {
-    margin-top: 20px;
-  }
-  #life #my-life {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 30px;
-    padding: 0;
-  }
-  #life #my-life #life-img {
-    width: 90%;
-    height: 300px;
-    background-size: cover;
-    margin: 0 auto;
-  }
-  #life #my-life #life-content {
-    margin: 0;
-    padding: 0;
-  }
-  #life #my-life #life-content h2 {
-    text-align-last: center;
-    font-size: 30px;
-  }
-  #life #my-life #life-content ul li {
-    font-size: 14px;
-    padding: 10px;
-  }
-  #life #my-life #life-content p {
-    margin-top: 10px;
-    font-size: 14px;
-    padding: 10px;
-  }
-  #life #my-focus {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  #life #my-focus #life-content {
-    margin: 0;
-    padding: 0;
-  }
-  #life #my-focus #life-content h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  #life #my-focus #life-content p {
-    font-size: 14px;
-  }
-  #life #my-focus #life-img {
-    width: 90%;
-    height: 300px;
-    background-size: cover;
-    margin: 0 auto;
-  }
 }
 /*# sourceMappingURL=style.css.map */
