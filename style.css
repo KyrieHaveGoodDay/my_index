@@ -480,6 +480,17 @@
   margin: 0 auto;
 }
 
+#work #VI h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#work #VI h1:hover {
+  color: #a54125;
+}
+
 #work #VI #logo-title {
   width: 800px;
   margin: 0 auto;

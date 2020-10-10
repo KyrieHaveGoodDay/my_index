@@ -13,6 +13,16 @@ $desktop: 1025px;
 $ipad: 1024px;
 $phone: 767px;
 
+// 作品集標題字形
+@mixin title {
+    font-family: $main_title;
+    font-size: 24px;
+    transition: 0.5s;
+    &:hover {
+        color: $main_color;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -320,12 +330,7 @@ $phone: 767px;
         width: 1200px;
         margin: 0 auto;
         h1 {
-            font-family: $main_title;
-            font-size: 24px;
-            transition: 0.5s;
-            &:hover {
-                color: $main_color;
-            }
+            @include title;
         }
         #img-box {
             display: grid;
@@ -346,12 +351,7 @@ $phone: 767px;
         width: 1200px;
         margin: 0 auto;
         h1 {
-            font-family: $main_title;
-            font-size: 24px;
-            transition: 0.5s;
-            &:hover {
-                color: $main_color;
-            }
+            @include title;
         }
         #img-box {
             display: grid;
@@ -372,12 +372,7 @@ $phone: 767px;
         width: 1200px;
         margin: 0 auto;
         h1 {
-            font-family: $main_title;
-            font-size: 24px;
-            transition: 0.5s;
-            &:hover {
-                color: $main_color;
-            }
+            @include title;
         }
         #img-box {
             display: grid;
@@ -402,13 +397,9 @@ $phone: 767px;
     #product {
         width: 1200px;
         margin: 0 auto;
-        h1 {
-            font-family: $main_title;
-            font-size: 24px;
-            transition: 0.5s;
-            &:hover {
-                color: $main_color;
-            }
+        h1{
+            @include title;
+        
         }
         #img-box {
             display: grid;
@@ -429,6 +420,9 @@ $phone: 767px;
         width: 1200px;
 
         margin: 0 auto;
+        h1{
+            @include title;
+        }
         #logo-title {
             width: 800px;
             margin: 0 auto;
