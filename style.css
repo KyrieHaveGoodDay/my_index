@@ -671,4 +671,69 @@
 #official #kyrie h3:hover {
   color: #a54125;
 }
+
+#about-kyrie {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#about-kyrie #resume-me h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#about-kyrie #resume-me h1:hover {
+  color: #a54125;
+}
+
+#about-kyrie #resume-me p {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#about-kyrie #skills h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#about-kyrie #skills h1:hover {
+  color: #a54125;
+}
+
+#about-kyrie #skills #skills-box {
+  width: 900px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 0 auto;
+}
+
+#about-kyrie #skills #skills-box .skill-max h2 {
+  display: inline-block;
+  margin: 10px 0;
+  margin-left: 80px;
+  background: #a54125;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#about-kyrie #skills #skills-box .skill-max ol li {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 16px;
+  margin-left: 25px;
+}
+
+#about-kyrie #skills #skills-box .skill-max ol li:hover {
+  color: #a54125;
+}
 /*# sourceMappingURL=style.css.map */

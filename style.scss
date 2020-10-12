@@ -569,3 +569,50 @@ $phone: 767px;
         }
     }
 }
+//about
+#about-kyrie{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    #resume-me{
+        h1{
+            @include title;
+        }
+        p{
+            font-family: $main_title;
+        }
+    }
+    #skills{
+        h1{
+            @include title;
+        }
+        #skills-box{
+            width: 900px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 50px;
+            margin: 0 auto;
+            .skill-max{
+                
+                h2{
+                    display: inline-block;
+                    margin: 10px 0;
+                    margin-left: 80px;
+                    background: $main_color;
+                    color: white;
+                    border-radius: 10px;
+                    padding: 10px;
+                    
+                }
+
+                ol{
+                    li{
+                        @include title;
+                        font-size: 16px;
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
