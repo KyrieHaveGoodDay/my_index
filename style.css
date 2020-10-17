@@ -322,15 +322,16 @@
 }
 
 #introduction {
-  margin: 0 80px;
+  width: 1200px;
   background: white;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
-#introduction #introduction-img {
+#introduction #card-left #introduction-img {
   width: 150px;
   height: 150px;
   background-image: url(./img/me-1.PNG);
@@ -390,14 +391,14 @@
 }
 
 #introduction #card-right {
+  margin-bottom: 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 50px;
 }
 
-#introduction #card-right #card-img img {
+#introduction #card-right img {
   width: 600px;
   height: 450px;
   -webkit-transform: translate(100px, 50px);
