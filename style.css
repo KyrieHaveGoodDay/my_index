@@ -331,6 +331,16 @@
       grid-template-columns: 200px 1000px;
 }
 
+@media screen and (max-width: 1024px) {
+  #introduction {
+    width: 1000px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px 900px;
+        grid-template-columns: 100px 900px;
+  }
+}
+
 #introduction #card-left #introduction-img {
   width: 150px;
   height: 150px;
@@ -339,6 +349,13 @@
   background-size: cover;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  #introduction #card-left #introduction-img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 #introduction #card-left h3 {
@@ -355,10 +372,23 @@
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
 }
 
+@media screen and (max-width: 1024px) {
+  #introduction #card-left h3 {
+    font-size: 18px;
+  }
+}
+
 #introduction #card-left #symbol {
   font-size: 30px;
   margin-left: 85px;
   font-family: "Noto Sans TC", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  #introduction #card-left #symbol {
+    font-size: 25px;
+    margin-left: 40px;
+  }
 }
 
 #introduction #card-left h1 {
@@ -375,6 +405,12 @@
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
 }
 
+@media screen and (max-width: 1024px) {
+  #introduction #card-left h1 {
+    font-size: 18px;
+  }
+}
+
 #introduction #card-left #connection {
   margin-top: 10px;
 }
@@ -388,6 +424,12 @@
 #introduction #card-left #connection a img:hover {
   -webkit-filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+}
+
+@media screen and (max-width: 1024px) {
+  #introduction #card-left #connection a img {
+    width: 25px;
+  }
 }
 
 #introduction #card-right {
