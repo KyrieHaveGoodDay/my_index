@@ -327,8 +327,8 @@
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 200px 1000px;
+      grid-template-columns: 200px 1000px;
 }
 
 #introduction #card-left #introduction-img {
