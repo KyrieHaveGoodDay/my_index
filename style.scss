@@ -592,17 +592,89 @@ $phone: 767px;
 }
 //about
 #about-kyrie {
-    width: 1200px;
+    width: 900px;
     margin: 0 auto;
     margin-top: 20px;
+
     display: grid;
-    grid-template-columns:250px 950px;
-    
-    
+    grid-template-columns: 250px 650px;
+    // 關於我-左邊
+    #about-left {
+        background-color: #3c3c3c;
+        // 關於我左邊的文字
+        .about-date {
+            // margin-left: 20px;
+            padding: 20px;
+            color: white;
+            h2 {
+                font-family: $main_title;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-family: $main_title;
+                font-size: 16px;
+            }
+        }
+    }
+    // 關於我-右邊
+    #about-right {
+        margin-left: 20px;
+        #about-title {
+            h1 {
+                font-family: $main_title;
+                font-size: 80px;
+            }
+        }
+        #contact-me {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 20px 0;
+        }
+    }
+    // 關於我右邊小圖片
+    .box1 {
+        img {
+            filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+            margin-right: 10px;
+        }
+        span {
+            font-family: $main_title;
+        }
+    }
+    // 關於我經驗、學歷、技能標題
+    .about-title {
+        font-family: $main_title;
+        font-size: 30px;
+        background: $main_color;
+        display: inline-block;
+        color: white;
+        padding: 5px 40px;
+        margin: 10px 0 20px;
+    }
+    //關於我經驗、學歷、技能切版
+    .about-content {
+        display: grid;
+        grid-template-columns: 200px 450px;
+        h2 {
+            font-family: $main_title;
+            text-align: center;
+        }
+    }
+    //關於我經驗、學歷、技能細節
+    .about-box{
+        margin-bottom: 10px;
+        h3{
+            font-family: $main_title;
+        }
+        h4{
+            font-family: $main_title;
+        }
+        p{
+            font-family: $main_title;
+        }
+    }
+
 }
-.about-date{
-    // margin-left: 20px;
-    background-color: black;
-    color: white;
-    
-}
+
+

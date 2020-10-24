@@ -716,17 +716,97 @@
 }
 
 #about-kyrie {
-  width: 1200px;
+  width: 900px;
   margin: 0 auto;
   margin-top: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 250px 950px;
-      grid-template-columns: 250px 950px;
+  -ms-grid-columns: 250px 650px;
+      grid-template-columns: 250px 650px;
 }
 
-.about-date {
-  background-color: black;
+#about-kyrie #about-left {
+  background-color: #3c3c3c;
+}
+
+#about-kyrie #about-left .about-date {
+  padding: 20px;
   color: white;
+}
+
+#about-kyrie #about-left .about-date h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#about-kyrie #about-left .about-date p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+}
+
+#about-kyrie #about-right {
+  margin-left: 20px;
+}
+
+#about-kyrie #about-right #about-title h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 80px;
+}
+
+#about-kyrie #about-right #contact-me {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin: 20px 0;
+}
+
+#about-kyrie .box1 img {
+  -webkit-filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+          filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
+  margin-right: 10px;
+}
+
+#about-kyrie .box1 span {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#about-kyrie .about-title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 30px;
+  background: #a54125;
+  display: inline-block;
+  color: white;
+  padding: 5px 40px;
+  margin: 10px 0 20px;
+}
+
+#about-kyrie .about-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 450px;
+      grid-template-columns: 200px 450px;
+}
+
+#about-kyrie .about-content h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+}
+
+#about-kyrie .about-box {
+  margin-bottom: 10px;
+}
+
+#about-kyrie .about-box h3 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#about-kyrie .about-box h4 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#about-kyrie .about-box p {
+  font-family: "Noto Sans TC", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
