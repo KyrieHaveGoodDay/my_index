@@ -717,12 +717,14 @@
 
 #about-kyrie {
   width: 900px;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 20px auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 250px 650px;
       grid-template-columns: 250px 650px;
+  -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 #about-kyrie #about-left {
@@ -746,10 +748,10 @@
 }
 
 #about-kyrie #about-right {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
-#about-kyrie #about-right #about-title h1 {
+#about-kyrie #about-right #about-head h1 {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 80px;
 }
@@ -773,20 +775,32 @@
 }
 
 #about-kyrie .about-title {
+  width: 200px;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 30px;
   background: #a54125;
   display: inline-block;
   color: white;
-  padding: 5px 40px;
+  padding: 5px 0;
   margin: 10px 0 20px;
+  padding-left: 20px;
+}
+
+#about-kyrie .about-hr {
+  width: 300px;
+  height: 3px;
+  background-color: #a54125;
+  border: none;
+  margin-left: 250px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 #about-kyrie .about-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px 450px;
-      grid-template-columns: 200px 450px;
+  -ms-grid-columns: 200px 400px;
+      grid-template-columns: 200px 400px;
 }
 
 #about-kyrie .about-content h2 {
@@ -808,5 +822,35 @@
 
 #about-kyrie .about-box p {
   font-family: "Noto Sans TC", sans-serif;
+}
+
+#about-kyrie #skills {
+  margin-bottom: 10px;
+}
+
+#about-kyrie #skills .about-skill {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#about-kyrie #skills .about-skill .skill-box h2 {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#about-kyrie #skills .about-skill .skill-box hr {
+  width: 200px;
+  height: 5px;
+  background-color: #a54125;
+  border: none;
+  margin: 0 auto;
+}
+
+#about-kyrie #skills .about-skill .skill-box ul li {
+  list-style: square;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 80px;
 }
 /*# sourceMappingURL=style.css.map */
