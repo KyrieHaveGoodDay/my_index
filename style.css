@@ -732,6 +732,13 @@
   background-color: #3c3c3c;
 }
 
+#about-kyrie #about-left #about-resume {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #about-kyrie #about-left .about-date {
   padding: 20px;
   color: white;

@@ -603,6 +603,13 @@ $phone: 767px;
     // 關於我-左邊
     #about-left {
         background-color: #3c3c3c;
+
+        // 左邊的照片
+        #about-resume{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
         // 關於我左邊的文字
         .about-date {
             // margin-left: 20px;
