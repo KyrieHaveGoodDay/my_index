@@ -152,8 +152,9 @@
 #life #my-life #life-img {
   width: 500px;
   height: 500px;
-  background-image: url(./img/LIFE-1.jpg);
+  background-image: url(./img/life.jpg);
   background-size: cover;
+  background-position: -90px 0;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
 }
@@ -266,7 +267,7 @@
 #life #my-focus #life-img {
   width: 500px;
   height: 500px;
-  background-image: url(./img/LIFE-1.jpg);
+  background-image: url(./img/focus.jpg);
   background-size: cover;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);

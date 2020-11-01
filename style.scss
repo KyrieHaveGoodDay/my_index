@@ -157,8 +157,9 @@ $phone: 767px;
         #life-img {
             width: 500px;
             height: 500px;
-            background-image: url(./img/LIFE-1.jpg);
+            background-image: url(./img/life.jpg);
             background-size: cover;
+            background-position: -90px 0;
             box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
             //平板
             @media screen and (max-width: $ipad) {
@@ -245,7 +246,7 @@ $phone: 767px;
         #life-img {
             width: 500px;
             height: 500px;
-            background-image: url(./img/LIFE-1.jpg);
+            background-image: url(./img/focus.jpg);
             background-size: cover;
             box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
             //平板
