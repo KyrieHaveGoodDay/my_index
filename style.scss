@@ -308,6 +308,7 @@ $phone: 767px;
     @media screen and (max-width: $ipad) {
         position: relative;
         width: auto;
+        grid-template-columns: 200px 500px;
     }
 
     //左半邊
@@ -374,8 +375,8 @@ $phone: 767px;
         grid-template-columns: repeat(2, 1fr);
         //平板
         @media screen and (max-width: $ipad) {
-            width: auto;
-            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+            
         }
         img {
             width: 600px;

@@ -336,6 +336,8 @@
   #introduction {
     position: relative;
     width: auto;
+    -ms-grid-columns: 200px 500px;
+        grid-template-columns: 200px 500px;
   }
 }
 
@@ -408,9 +410,7 @@
 
 @media screen and (max-width: 1024px) {
   #introduction #card-right {
-    width: auto;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }
 
