@@ -769,6 +769,7 @@ $phone: 767px;
     grid-template-columns: 250px 650px;
     box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+    grid-template-areas: "about-left about-right";
     //平板
     @media screen and (max-width: $ipad) {
         grid-template-columns: 150px 550px;
@@ -776,10 +777,16 @@ $phone: 767px;
     }
     //手機
     @media screen and (max-width: $phone) {
+        display: block;
     }
     // 關於我-左邊
     #about-left {
         background-color: #3c3c3c;
+        grid-area: about-left;
+        //手機
+        @media screen and (max-width: $phone) {
+            display: none;
+        }
 
         // 左邊的照片
         #about-resume {
@@ -829,6 +836,7 @@ $phone: 767px;
     // 關於我-右邊
     #about-right {
         margin-left: 40px;
+        grid-area: about-right;
         // width: 100%;
         //平板
         @media screen and (max-width: $ipad) {
@@ -836,17 +844,32 @@ $phone: 767px;
         }
         //手機
         @media screen and (max-width: $phone) {
+            width: auto;
         }
         #about-head {
             h1 {
                 font-family: $main_title;
                 font-size: 80px;
+                //手機
+                @media screen and (max-width: $phone) {
+                    text-align: center;
+                }
+            }
+            h3 {
+                //手機
+                @media screen and (max-width: $phone) {
+                    text-align: center;
+                }
             }
         }
         #contact-me {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             margin: 20px 0;
+            //手機
+            @media screen and (max-width: $phone) {
+                grid-gap: 10px;
+            }
         }
     }
     // 關於我右邊小圖片
@@ -854,6 +877,11 @@ $phone: 767px;
         img {
             filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
             margin-right: 10px;
+            //手機
+            @media screen and (max-width: $phone) {
+                margin: 0;
+                display: inline-block;
+            }
         }
         span {
             font-family: $main_title;
@@ -871,6 +899,13 @@ $phone: 767px;
         padding: 5px 0;
         margin: 10px 0 20px;
         padding-left: 20px;
+        //手機
+        @media screen and (max-width: $phone) {
+            width: 100px;
+            font-size: 20px;
+
+            padding-left: 0;
+        }
     }
     // 右邊標題的線
     .about-hr {
@@ -880,19 +915,38 @@ $phone: 767px;
         border: none;
         margin-left: 250px;
         transform: translateY(-50px);
+        //手機
+        @media screen and (max-width: $phone) {
+            width: 200px;
+            transform: translateY(-40px);
+            margin-left: 150px;
+        }
     }
     //關於我經驗、學歷、技能切版
     .about-content {
         display: grid;
         grid-template-columns: 200px 400px;
+        //手機
+        @media screen and (max-width: $phone) {
+            grid-template-columns: 150px 400px;
+        }
         h2 {
             font-family: $main_title;
             text-align: center;
+            //手機
+            @media screen and (max-width: $phone) {
+                text-align-last: left;
+            }
         }
     }
     //關於我經驗、學歷、技能細節
     .about-box {
         margin-bottom: 10px;
+        //手機
+        @media screen and (max-width: $phone) {
+            width: 200px;
+            font-size: 12px;
+        }
         h3 {
             font-family: $main_title;
         }
@@ -901,6 +955,10 @@ $phone: 767px;
         }
         p {
             font-family: $main_title;
+            //手機
+            @media screen and (max-width: $phone) {
+                width: 200px;
+            }
         }
     }
 
@@ -922,12 +980,20 @@ $phone: 767px;
                     background-color: $main_color;
                     border: none;
                     margin: 0 auto;
+                    //手機
+                    @media screen and (max-width: $phone) {
+                        width: 100%;
+                    }
                 }
                 ul {
                     li {
                         list-style: square;
                         font-family: $main_title;
                         margin-left: 80px;
+                        //手機
+                        @media screen and (max-width: $phone) {
+                            margin-left: 50px;
+                        }
                     }
                 }
             }

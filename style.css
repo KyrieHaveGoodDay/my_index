@@ -1021,6 +1021,7 @@
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+      grid-template-areas: "about-left about-right";
 }
 
 @media screen and (max-width: 1024px) {
@@ -1031,8 +1032,23 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  #about-kyrie {
+    display: block;
+  }
+}
+
 #about-kyrie #about-left {
   background-color: #3c3c3c;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about-left;
+}
+
+@media screen and (max-width: 767px) {
+  #about-kyrie #about-left {
+    display: none;
+  }
 }
 
 #about-kyrie #about-left #about-resume {
@@ -1079,6 +1095,9 @@
 
 #about-kyrie #about-right {
   margin-left: 40px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: about-right;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1087,9 +1106,27 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  #about-kyrie #about-right {
+    width: auto;
+  }
+}
+
 #about-kyrie #about-right #about-head h1 {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  #about-kyrie #about-right #about-head h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-kyrie #about-right #about-head h3 {
+    text-align: center;
+  }
 }
 
 #about-kyrie #about-right #contact-me {
@@ -1100,10 +1137,23 @@
   margin: 20px 0;
 }
 
+@media screen and (max-width: 767px) {
+  #about-kyrie #about-right #contact-me {
+    grid-gap: 10px;
+  }
+}
+
 #about-kyrie .box1 img {
   -webkit-filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
           filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #about-kyrie .box1 img {
+    margin: 0;
+    display: inline-block;
+  }
 }
 
 #about-kyrie .box1 span {
@@ -1122,6 +1172,14 @@
   padding-left: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  #about-kyrie .about-title {
+    width: 100px;
+    font-size: 20px;
+    padding-left: 0;
+  }
+}
+
 #about-kyrie .about-hr {
   width: 300px;
   height: 3px;
@@ -1132,6 +1190,15 @@
           transform: translateY(-50px);
 }
 
+@media screen and (max-width: 767px) {
+  #about-kyrie .about-hr {
+    width: 200px;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    margin-left: 150px;
+  }
+}
+
 #about-kyrie .about-content {
   display: -ms-grid;
   display: grid;
@@ -1139,13 +1206,33 @@
       grid-template-columns: 200px 400px;
 }
 
+@media screen and (max-width: 767px) {
+  #about-kyrie .about-content {
+    -ms-grid-columns: 150px 400px;
+        grid-template-columns: 150px 400px;
+  }
+}
+
 #about-kyrie .about-content h2 {
   font-family: "Noto Sans TC", sans-serif;
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  #about-kyrie .about-content h2 {
+    text-align-last: left;
+  }
+}
+
 #about-kyrie .about-box {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #about-kyrie .about-box {
+    width: 200px;
+    font-size: 12px;
+  }
 }
 
 #about-kyrie .about-box h3 {
@@ -1158,6 +1245,12 @@
 
 #about-kyrie .about-box p {
   font-family: "Noto Sans TC", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  #about-kyrie .about-box p {
+    width: 200px;
+  }
 }
 
 #about-kyrie #skills {
@@ -1184,9 +1277,21 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  #about-kyrie #skills .about-skill .skill-box hr {
+    width: 100%;
+  }
+}
+
 #about-kyrie #skills .about-skill .skill-box ul li {
   list-style: square;
   font-family: "Noto Sans TC", sans-serif;
   margin-left: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  #about-kyrie #skills .about-skill .skill-box ul li {
+    margin-left: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
