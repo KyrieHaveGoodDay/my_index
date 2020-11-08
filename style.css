@@ -1023,6 +1023,14 @@
   border-radius: 5px;
 }
 
+@media screen and (max-width: 1024px) {
+  #about-kyrie {
+    -ms-grid-columns: 150px 550px;
+        grid-template-columns: 150px 550px;
+    width: auto;
+  }
+}
+
 #about-kyrie #about-left {
   background-color: #3c3c3c;
 }
@@ -1034,9 +1042,22 @@
      object-fit: cover;
 }
 
+@media screen and (max-width: 1024px) {
+  #about-kyrie #about-left #about-resume {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 #about-kyrie #about-left .about-date {
   padding: 20px;
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-kyrie #about-left .about-date {
+    padding: 10px;
+  }
 }
 
 #about-kyrie #about-left .about-date h2 {
@@ -1050,8 +1071,20 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 1024px) {
+  #about-kyrie #about-left .about-date p {
+    font-size: 14px;
+  }
+}
+
 #about-kyrie #about-right {
   margin-left: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-kyrie #about-right {
+    margin: 0;
+  }
 }
 
 #about-kyrie #about-right #about-head h1 {

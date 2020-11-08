@@ -769,7 +769,14 @@ $phone: 767px;
     grid-template-columns: 250px 650px;
     box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-
+    //平板
+    @media screen and (max-width: $ipad) {
+        grid-template-columns: 150px 550px;
+        width: auto;
+    }
+    //手機
+    @media screen and (max-width: $phone) {
+    }
     // 關於我-左邊
     #about-left {
         background-color: #3c3c3c;
@@ -779,12 +786,28 @@ $phone: 767px;
             width: 250px;
             height: 250px;
             object-fit: cover;
+            //平板
+            @media screen and (max-width: $ipad) {
+                width: 150px;
+                height: 150px;
+            }
+            //手機
+            @media screen and (max-width: $phone) {
+            }
         }
         // 關於我左邊的文字
         .about-date {
             // margin-left: 20px;
             padding: 20px;
             color: white;
+            //平板
+            @media screen and (max-width: $ipad) {
+                padding: 10px;
+            }
+            //手機
+            @media screen and (max-width: $phone) {
+            }
+
             h2 {
                 font-family: $main_title;
                 font-size: 24px;
@@ -793,6 +816,13 @@ $phone: 767px;
             p {
                 font-family: $main_title;
                 font-size: 16px;
+                //平板
+                @media screen and (max-width: $ipad) {
+                    font-size: 14px;
+                }
+                //手機
+                @media screen and (max-width: $phone) {
+                }
             }
         }
     }
@@ -800,6 +830,13 @@ $phone: 767px;
     #about-right {
         margin-left: 40px;
         // width: 100%;
+        //平板
+        @media screen and (max-width: $ipad) {
+            margin: 0;
+        }
+        //手機
+        @media screen and (max-width: $phone) {
+        }
         #about-head {
             h1 {
                 font-family: $main_title;
