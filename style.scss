@@ -25,6 +25,10 @@ $phone: 767px;
     @media screen and (max-width: $ipad) {
         font-size: 30px;
     }
+    //手機
+    @media screen and (max-width: $phone) {
+        font-size: 25px;
+    }
 }
 
 * {
@@ -304,15 +308,28 @@ $phone: 767px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 200px 1000px;
+    grid-template-areas: "card-left card-right";
     //平板
     @media screen and (max-width: $ipad) {
         position: relative;
         width: auto;
         grid-template-columns: 200px 500px;
     }
+    //手機
+    @media screen and (max-width: $phone) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "card-right"
+            "card-left";
+    }
 
     //左半邊
     #card-left {
+        grid-area: card-left;
+        //手機
+        @media screen and (max-width: $phone) {
+            text-align: center;
+        }
         #introduction-img {
             width: 150px;
             height: 150px;
@@ -322,6 +339,11 @@ $phone: 767px;
             border-radius: 50%;
             // margin: 0 60px;
             margin-bottom: 20px;
+            //手機
+            @media screen and (max-width: $phone) {
+                display: block;
+                margin: 0 auto;
+            }
         }
         h3 {
             color: black;
@@ -338,6 +360,10 @@ $phone: 767px;
             font-size: 30px;
             margin-left: 85px;
             font-family: $main_title;
+            //手機
+            @media screen and (max-width: $phone) {
+                margin-left: 0;
+            }
         }
         h1 {
             color: black;
@@ -370,13 +396,18 @@ $phone: 767px;
 
     // 右半邊設計
     #card-right {
+        grid-area: card-right;
         margin-bottom: 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         //平板
         @media screen and (max-width: $ipad) {
             width: 100%;
-            
+        }
+        //手機
+        @media screen and (max-width: $phone) {
+            display: block;
+            position: relative;
         }
         img {
             width: 600px;
@@ -389,6 +420,12 @@ $phone: 767px;
                 height: 250px;
                 transform: translate(50px, 80px);
                 z-index: 1;
+            }
+            //手機
+            @media screen and (max-width: $phone) {
+                width: 300px;
+                height: 250px;
+                transform: translate(30px, 30px);
             }
         }
 
@@ -404,6 +441,14 @@ $phone: 767px;
                 height: 300px;
                 position: absolute;
                 left: 550px;
+            }
+            //手機
+            @media screen and (max-width: $phone) {
+                width: 150px;
+                height: 250px;
+                position: absolute;
+                top: 0;
+                left: 200px;
             }
         }
     }
@@ -422,6 +467,12 @@ $phone: 767px;
         word-spacing: 50px;
         margin-left: 0;
         margin-top: 0;
+        text-align: center;
+    }
+    //手機
+    @media screen and (max-width: $phone) {
+        word-spacing: 10px;
+        text-align: center;
     }
 
     a {
@@ -438,6 +489,10 @@ $phone: 767px;
         //平板
         @media screen and (max-width: $ipad) {
             font-size: 35px;
+        }
+        //手機
+        @media screen and (max-width: $phone) {
+            font-size: 25px;
         }
     }
 }
@@ -472,6 +527,10 @@ $phone: 767px;
             @media screen and (max-width: $ipad) {
                 grid-template-columns: repeat(2, 1fr);
             }
+            //手機
+            @media screen and (max-width: $phone) {
+                grid-template-columns: repeat(1, 1fr);
+            }
             img {
                 width: 300px;
                 height: 250px;
@@ -500,6 +559,10 @@ $phone: 767px;
             //平板
             @media screen and (max-width: $ipad) {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            //手機
+            @media screen and (max-width: $phone) {
+                grid-template-columns: repeat(1, 1fr);
             }
             img {
                 width: 300px;
@@ -530,6 +593,10 @@ $phone: 767px;
             @media screen and (max-width: $ipad) {
                 grid-template-columns: repeat(2, 1fr);
             }
+            //手機
+            @media screen and (max-width: $phone) {
+                grid-template-columns: repeat(1, 1fr);
+            }
             img {
                 width: 300px;
                 height: 380px;
@@ -541,6 +608,12 @@ $phone: 767px;
                 margin-top: 100px;
                 width: 400px;
                 height: 200px;
+
+                //手機
+                @media screen and (max-width: $phone) {
+                    margin: 0;
+                    width: 300px;
+                }
             }
         }
     }
@@ -563,6 +636,10 @@ $phone: 767px;
             //平板
             @media screen and (max-width: $ipad) {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            //手機
+            @media screen and (max-width: $phone) {
+                grid-template-columns: repeat(1, 1fr);
             }
             img {
                 width: 300px;
@@ -600,7 +677,13 @@ $phone: 767px;
                 @media screen and (max-width: $ipad) {
                     width: 600px;
                     height: 400px;
-                    margin-left: 100px;
+                    display: block;
+                    margin: 0 auto;
+                }
+                //手機
+                @media screen and (max-width: $phone) {
+                    width: 300px;
+                    height: 200px;
                 }
             }
         }
@@ -612,6 +695,10 @@ $phone: 767px;
             //平板
             @media screen and (max-width: $ipad) {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            //手機
+            @media screen and (max-width: $phone) {
+                grid-template-columns: repeat(1, 1fr);
             }
             img {
                 width: 300px;
@@ -635,6 +722,10 @@ $phone: 767px;
     @media screen and (max-width: $ipad) {
         width: auto;
         grid-template-columns: repeat(2, 1fr);
+    }
+    //手機
+    @media screen and (max-width: $phone) {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     // 咖啡網站連結
