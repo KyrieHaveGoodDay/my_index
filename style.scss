@@ -302,11 +302,11 @@ $phone: 767px;
     grid-template-columns: 200px 1000px;
     //平板
     @media screen and (max-width: $ipad) {
-        width: 1000px;
-        display: grid;
-        grid-template-columns: 100px 900px;
+        position: relative;
+        width: 100%;
     }
 
+    //左半邊
     #card-left {
         #introduction-img {
             width: 150px;
@@ -317,11 +317,6 @@ $phone: 767px;
             border-radius: 50%;
             // margin: 0 60px;
             margin-bottom: 20px;
-            //平板
-            @media screen and (max-width: $ipad) {
-                width: 80px;
-                height: 80px;
-            }
         }
         h3 {
             color: black;
@@ -333,20 +328,11 @@ $phone: 767px;
             &:hover {
                 filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
             }
-            //平板
-            @media screen and (max-width: $ipad) {
-                font-size: 18px;
-            }
         }
         #symbol {
             font-size: 30px;
             margin-left: 85px;
             font-family: $main_title;
-            //平板
-            @media screen and (max-width: $ipad) {
-                font-size: 25px;
-                margin-left: 40px;
-            }
         }
         h1 {
             color: black;
@@ -357,10 +343,6 @@ $phone: 767px;
             font-size: 40px;
             &:hover {
                 filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
-            }
-            //平板
-            @media screen and (max-width: $ipad) {
-                font-size: 18px;
             }
         }
         #connection {
@@ -376,10 +358,6 @@ $phone: 767px;
                     &:hover {
                         filter: invert(26%) sepia(81%) saturate(800%) hue-rotate(336deg) brightness(101%) contrast(93%);
                     }
-                    //平板
-                    @media screen and (max-width: $ipad) {
-                        width: 25px;
-                    }
                 }
             }
         }
@@ -390,12 +368,25 @@ $phone: 767px;
         margin-bottom: 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        //平板
+        @media screen and (max-width: $ipad) {
+            width: 100%;
+            
+        }
         img {
             width: 600px;
             height: 450px;
             transform: translate(100px, 50px);
             object-fit: cover;
+            //平板
+            @media screen and (max-width: $ipad) {
+                width: 400px;
+                height: 250px;
+                transform: translate(50px, 80px);
+                z-index: 1;
+            }
         }
+        
 
         #card-bg {
             color: rgb(111, 163, 206);
@@ -403,16 +394,33 @@ $phone: 767px;
             width: 350px;
             height: 450px;
             background-color: rgb(111, 163, 206);
+            //平板
+            @media screen and (max-width: $ipad) {
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                left: 550px;
+            }
         }
     }
 }
 
 //作品集標題
 #title {
+    width: 100%;
     //letter-spacing: 15px;
     word-spacing: 50px;
     margin-left: 80px;
     margin-top: 10px;
+    //平板
+    @media screen and (max-width: $ipad) {
+        width: 100%;
+        word-spacing: 50px;
+        margin-left: 0;
+        margin-top: 0;
+        
+     }
+
     a {
         text-decoration: none;
         transition: 0.5s;
@@ -423,7 +431,21 @@ $phone: 767px;
         &:hover {
             color: $main_color;
         }
+
+        //平板
+        @media screen and (max-width: $ipad) {
+           font-size: 35px;
+          
+        }
     }
+}
+
+#hr-title{
+    //平板
+    @media screen and (max-width: $ipad) {
+        width: 100%;
+         
+     }
 }
 
 //  作品集-平面設計
@@ -605,7 +627,7 @@ $phone: 767px;
         background-color: #3c3c3c;
 
         // 左邊的照片
-        #about-resume{
+        #about-resume {
             width: 250px;
             height: 250px;
             object-fit: cover;
