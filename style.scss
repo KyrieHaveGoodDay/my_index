@@ -511,6 +511,7 @@ $phone: 767px;
     #graphic-design {
         width: 1200px;
         margin: 0 auto;
+        overflow: hidden;
         //平板
         @media screen and (max-width: $ipad) {
             width: auto;
@@ -544,6 +545,7 @@ $phone: 767px;
     #poster {
         width: 1200px;
         margin: 0 auto;
+        overflow: hidden;
         //平板
         @media screen and (max-width: $ipad) {
             width: auto;
@@ -577,6 +579,7 @@ $phone: 767px;
     #exquisite {
         width: 1200px;
         margin: 0 auto;
+        overflow: hidden;
         //平板
         @media screen and (max-width: $ipad) {
             width: auto;
@@ -621,6 +624,7 @@ $phone: 767px;
     #product {
         width: 1200px;
         margin: 0 auto;
+        overflow: hidden;
         //平板
         @media screen and (max-width: $ipad) {
             width: auto;
@@ -655,6 +659,7 @@ $phone: 767px;
         width: 1200px;
 
         margin: 0 auto;
+        overflow: hidden;
         //平板
         @media screen and (max-width: $ipad) {
             width: auto;
@@ -665,6 +670,7 @@ $phone: 767px;
         #logo-title {
             width: 800px;
             margin: 0 auto;
+            overflow: hidden;
             //平板
             @media screen and (max-width: $ipad) {
                 width: auto;

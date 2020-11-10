@@ -576,6 +576,7 @@
 #work #graphic-design {
   width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -643,6 +644,7 @@
 #work #poster {
   width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -710,6 +712,7 @@
 #work #exquisite {
   width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -790,6 +793,7 @@
 #work #product {
   width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -857,6 +861,7 @@
 #work #VI {
   width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -891,6 +896,7 @@
 #work #VI #logo-title {
   width: 800px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
