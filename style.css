@@ -346,7 +346,7 @@
   #introduction {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "card-right" "card-left";
+        grid-template-areas: "card-right" "card-left";
   }
 }
 
