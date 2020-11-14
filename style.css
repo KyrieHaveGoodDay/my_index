@@ -474,6 +474,7 @@
     -webkit-transform: translate(50px, 80px);
             transform: translate(50px, 80px);
     z-index: 1;
+    position: relative;
   }
 }
 
