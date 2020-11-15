@@ -733,6 +733,7 @@ $phone: 767px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 20px auto;
+    
     //平板
     @media screen and (max-width: $ipad) {
         width: auto;
@@ -744,8 +745,10 @@ $phone: 767px;
     }
     .web-title {
         text-align: center;
+        
     }
     .web-img {
+        overflow: hidden;
         img {
             width: 300px;
             height: 150px;

@@ -1000,6 +1000,10 @@
   text-align: center;
 }
 
+#official .web-img {
+  overflow: hidden;
+}
+
 #official .web-img img {
   width: 300px;
   height: 150px;
