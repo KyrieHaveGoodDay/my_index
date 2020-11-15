@@ -1297,6 +1297,25 @@
   }
 }
 
+#icon {
+  height: 200px;
+  background: #a54125;
+  color: white;
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 30px;
+  text-align: center;
+}
+
+#icon a {
+  text-decoration: none;
+  color: white;
+}
+
+#icon h3 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
 @-webkit-keyframes kyrieText {
   0% {
     -webkit-transform: scale(1.5);
