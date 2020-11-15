@@ -493,6 +493,8 @@ $phone: 767px;
 
         &:hover {
             color: $main_color;
+            border-bottom: 5px solid $main_color;
+            
         }
 
         //平板
@@ -503,6 +505,7 @@ $phone: 767px;
         @media screen and (max-width: $phone) {
             font-size: 25px;
         }
+        
     }
 }
 
