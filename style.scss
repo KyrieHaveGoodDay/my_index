@@ -48,8 +48,9 @@ $phone: 767px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    //background-position: 0 -1px;
+    background-position: 0 -70px;
     color: white;
+    overflow: hidden;
 
     //平板
     @media screen and (max-width: $ipad) {
@@ -66,6 +67,9 @@ $phone: 767px;
         top: 300px;
         left: 200px;
         width: 600px;
+        animation-name: kyrieText;
+        animation-duration: 0.8s;
+        animation-delay: 0.2s;
 
         //平板
         @media screen and (max-width: $ipad) {
@@ -412,7 +416,7 @@ $phone: 767px;
         img {
             width: 600px;
             height: 450px;
-            transform: translate(100px, 50px);
+            transform: translate(180px, 50px);
             object-fit: cover;
             //平板
             @media screen and (max-width: $ipad) {
@@ -433,11 +437,11 @@ $phone: 767px;
         }
 
         #card-bg {
-            color: rgb(111, 163, 206);
+            color: rgb(255,244,214);
             font-family: $main_title;
             width: 350px;
             height: 450px;
-            background-color: rgb(111, 163, 206);
+            background-color: rgb(255,244,214);
             //平板
             @media screen and (max-width: $ipad) {
                 width: 200px;
@@ -1007,5 +1011,14 @@ $phone: 767px;
                 }
             }
         }
+    }
+}
+
+@keyframes kyrieText {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
     }
 }

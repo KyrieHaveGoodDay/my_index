@@ -16,7 +16,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 0 -70px;
   color: white;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -37,6 +39,12 @@
   top: 300px;
   left: 200px;
   width: 600px;
+  -webkit-animation-name: kyrieText;
+          animation-name: kyrieText;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -346,7 +354,7 @@
   #introduction {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "card-right" "card-left";
+        grid-template-areas: "card-right" "card-left";
   }
 }
 
@@ -461,8 +469,8 @@
 #introduction #card-right img {
   width: 600px;
   height: 450px;
-  -webkit-transform: translate(100px, 50px);
-          transform: translate(100px, 50px);
+  -webkit-transform: translate(180px, 50px);
+          transform: translate(180px, 50px);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -489,11 +497,11 @@
 }
 
 #introduction #card-right #card-bg {
-  color: #6fa3ce;
+  color: #fff4d6;
   font-family: "Noto Sans TC", sans-serif;
   width: 350px;
   height: 450px;
-  background-color: #6fa3ce;
+  background-color: #fff4d6;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1300,6 +1308,28 @@
 @media screen and (max-width: 767px) {
   #about-kyrie #skills .about-skill .skill-box ul li {
     margin-left: 50px;
+  }
+}
+
+@-webkit-keyframes kyrieText {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes kyrieText {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=style.css.map */
