@@ -1321,6 +1321,13 @@
   margin-top: 40px;
 }
 
+#gotop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
 @-webkit-keyframes kyrieText {
   0% {
     -webkit-transform: scale(1.5);
