@@ -893,6 +893,10 @@ body {
         span {
             font-family: $main_title;
         }
+        span a{
+            text-decoration: none;
+            font-family: $main_title;
+        }
     }
 
     // 關於我經驗、學歷、技能標題

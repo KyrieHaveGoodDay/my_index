@@ -1171,6 +1171,11 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+#about-kyrie .box1 span a {
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 #about-kyrie .about-title {
   width: 200px;
   font-family: "Noto Sans TC", sans-serif;
