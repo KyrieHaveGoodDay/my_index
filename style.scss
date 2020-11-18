@@ -40,6 +40,11 @@ $phone: 767px;
     /* border: 0.01px solid rgba(0,0,0,0.01); */
 }
 
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 // 導覽頁
 #card {
     width: 100%;
@@ -402,6 +407,7 @@ $phone: 767px;
 
     // 右半邊設計
     #card-right {
+        width: 100%;
         grid-area: card-right;
         margin-bottom: 50px;
         display: grid;
@@ -494,7 +500,6 @@ $phone: 767px;
         &:hover {
             color: $main_color;
             border-bottom: 5px solid $main_color;
-            
         }
 
         //平板
@@ -505,7 +510,6 @@ $phone: 767px;
         @media screen and (max-width: $phone) {
             font-size: 25px;
         }
-        
     }
 }
 
@@ -531,6 +535,7 @@ $phone: 767px;
         h1 {
             @include title;
         }
+
         #img-box {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -736,7 +741,7 @@ $phone: 767px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 20px auto;
-    
+
     //平板
     @media screen and (max-width: $ipad) {
         width: auto;
@@ -748,7 +753,6 @@ $phone: 767px;
     }
     .web-title {
         text-align: center;
-        
     }
     .web-img {
         overflow: hidden;
@@ -757,14 +761,12 @@ $phone: 767px;
             height: 150px;
         }
     }
-    .web-h3{
+    .web-h3 {
         font-family: $main_title;
         &:hover {
             color: $main_color;
         }
     }
-
-    
 }
 //about
 #about-kyrie {
@@ -1007,34 +1009,31 @@ $phone: 767px;
 }
 
 //footer
-#icon{
-
+#icon {
     height: 200px;
-    background:$main_color;
+    background: $main_color;
     color: white;
-    font-family:$main_title ;
+    font-family: $main_title;
     padding: 30px;
     text-align: center;
     // position: absolute;
     // right: 0;
-    a{
+    a {
         text-decoration: none;
         color: white;
     }
-    h3{
+    h3 {
         margin-bottom: 20px;
         margin-top: 40px;
     }
-    
 }
 
-#gotop{
+#gotop {
     position: fixed;
     right: 30px;
     bottom: 30px;
     cursor: pointer;
 }
-
 
 @keyframes kyrieText {
     0% {
