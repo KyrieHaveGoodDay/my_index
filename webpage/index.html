@@ -11,6 +11,16 @@
 </head>
 
 <body id="top">
+
+    <div class="loading-wrapper">
+        <div style="color: #f4696b" class="loading la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <div id="introduction">
         <div id="card-left">
             <!-- 左半邊 -->
@@ -93,7 +103,13 @@
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loading-wrapper").fadeOut(500);
+            }, 1000);
+        });
+    </script>
     <!-- JS CDN -->
     <script src="https://kyriehavegoodday.github.io/GoTo_Element/goto.js"></script>
 

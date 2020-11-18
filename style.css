@@ -67,8 +67,8 @@ body {
   width: 600px;
   -webkit-animation-name: kyrieText;
           animation-name: kyrieText;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
