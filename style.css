@@ -60,27 +60,6 @@ body {
   }
 }
 
-#card #card-a {
-  text-align: right;
-  margin-top: 10px;
-  margin-right: 15px;
-}
-
-#card #card-a #top-box {
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  font-family: "Noto Sans TC", sans-serif;
-  margin: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  #card #card-a #top-box {
-    font-size: 15px;
-    margin: 10px;
-  }
-}
-
 #card #content {
   position: relative;
   top: 300px;
@@ -105,7 +84,7 @@ body {
 @media screen and (max-width: 767px) {
   #card #content {
     position: relative;
-    top: 40px;
+    top: 80px;
     left: 20px;
     width: 300px;
   }
@@ -390,10 +369,25 @@ body {
   margin: 30px auto;
 }
 
+@media screen and (max-width: 767px) {
+  #life #mix-box {
+    width: 100%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 #life #mix-box .work-about {
   width: 500px;
   height: 350px;
   border: 2px black solid;
+}
+
+@media screen and (max-width: 767px) {
+  #life #mix-box .work-about {
+    width: 350px;
+    margin: 0 auto;
+  }
 }
 
 #life #mix-box .work-about a {
