@@ -380,7 +380,8 @@ body {
 #life #mix-box .work-about {
   width: 500px;
   height: 350px;
-  border: 2px black solid;
+  -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 767px) {

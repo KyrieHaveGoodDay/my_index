@@ -350,7 +350,7 @@ body {
         .work-about {
             width: 500px;
             height: 350px;
-            border: 2px black solid;
+            box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
             //手機
             @media screen and (max-width: $phone) {
                 width: 350px;
