@@ -1102,6 +1102,8 @@ body {
 #official .web-img img {
   width: 300px;
   height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #official .web-h3 {
