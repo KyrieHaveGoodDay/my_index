@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@600&display=swap');
 
 // 主色系
 // RGB 165,65,37 =##A84125
@@ -6,7 +7,7 @@ $main_color: rgb(165, 65, 37);
 //標題用字體
 $main_title: "Noto Sans TC", sans-serif;
 //文章用字體
-// $main_content: 'Noto Sans TC', sans-serif;
+$main_content: 'Noto Serif TC', serif;
 
 // RWD
 $desktop: 1025px;
@@ -182,7 +183,7 @@ body {
         margin: 0 auto;
         margin-bottom: 30px;
         //  border:5px #FFAC55 solid;
-        box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
         padding: 20px;
         background-color: white;
@@ -216,7 +217,7 @@ body {
                 margin: 0 auto;
             }
         }
-        #life-content {
+        .life-content {
             padding: 0 60px;
             // border:5px #FFAC55 solid;
             //手機
@@ -233,17 +234,18 @@ body {
                     margin-top: 10px;
                 }
             }
-            ul {
+            ol {
                 margin-top: 10px;
                 li {
-                    font-family: $main_title;
+                    font-family: $main_content;
+                    // font-weight: bolder;
                     //手機
                     @media screen and (max-width: $phone) {
                         font-size: 16px;
                     }
                     a {
                         text-decoration: none;
-                        font-family: $main_title;
+                        font-family: $main_content;
                     }
                 }
             }
@@ -251,7 +253,7 @@ body {
                 margin-top: 50px;
                 line-height: 30px;
                 font-size: 18px;
-                font-family: $main_title;
+                font-family: $main_content;
                 //手機
                 @media screen and (max-width: $phone) {
                     font-size: 16px;
@@ -269,7 +271,7 @@ body {
         margin: 0 auto;
         margin-bottom: 30px;
         // border:5px #FFAC55 solid;
-        box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
         padding: 20px;
         background-color: white;
@@ -304,7 +306,7 @@ body {
                 height: 300px;
             }
         }
-        #life-content {
+        .life-content {
             padding: 0 60px;
             // border:5px #FFAC55 solid;
             //手機
@@ -323,7 +325,7 @@ body {
             p {
                 margin-top: 30px;
                 line-height: 30px;
-                font-family: $main_title;
+                font-family: $main_content;
                 font-size: 18px;
                 //手機
                 @media screen and (max-width: $phone) {

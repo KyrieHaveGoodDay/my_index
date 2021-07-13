@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -162,8 +163,8 @@ body {
       grid-template-columns: 45% 55%;
   margin: 0 auto;
   margin-bottom: 30px;
-  -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 20px;
   background-color: white;
@@ -209,57 +210,57 @@ body {
   }
 }
 
-#life #my-life #life-content {
+#life #my-life .life-content {
   padding: 0 60px;
 }
 
 @media screen and (max-width: 767px) {
-  #life #my-life #life-content {
+  #life #my-life .life-content {
     padding: 0 30px;
   }
 }
 
-#life #my-life #life-content h2 {
+#life #my-life .life-content h2 {
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 36px;
 }
 
 @media screen and (max-width: 767px) {
-  #life #my-life #life-content h2 {
+  #life #my-life .life-content h2 {
     font-size: 30px;
     margin-top: 10px;
   }
 }
 
-#life #my-life #life-content ul {
+#life #my-life .life-content ol {
   margin-top: 10px;
 }
 
-#life #my-life #life-content ul li {
-  font-family: "Noto Sans TC", sans-serif;
+#life #my-life .life-content ol li {
+  font-family: "Noto Serif TC", serif;
 }
 
 @media screen and (max-width: 767px) {
-  #life #my-life #life-content ul li {
+  #life #my-life .life-content ol li {
     font-size: 16px;
   }
 }
 
-#life #my-life #life-content ul li a {
+#life #my-life .life-content ol li a {
   text-decoration: none;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
 }
 
-#life #my-life #life-content p {
+#life #my-life .life-content p {
   margin-top: 50px;
   line-height: 30px;
   font-size: 18px;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
 }
 
 @media screen and (max-width: 767px) {
-  #life #my-life #life-content p {
+  #life #my-life .life-content p {
     font-size: 16px;
   }
 }
@@ -272,8 +273,8 @@ body {
       grid-template-columns: 57% 43%;
   margin: 0 auto;
   margin-bottom: 30px;
-  -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 20px;
   background-color: white;
@@ -323,37 +324,37 @@ body {
   }
 }
 
-#life #my-focus #life-content {
+#life #my-focus .life-content {
   padding: 0 60px;
 }
 
 @media screen and (max-width: 767px) {
-  #life #my-focus #life-content {
+  #life #my-focus .life-content {
     padding: 0 30px;
   }
 }
 
-#life #my-focus #life-content h2 {
+#life #my-focus .life-content h2 {
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 36px;
 }
 
 @media screen and (max-width: 767px) {
-  #life #my-focus #life-content h2 {
+  #life #my-focus .life-content h2 {
     font-size: 30px;
   }
 }
 
-#life #my-focus #life-content p {
+#life #my-focus .life-content p {
   margin-top: 30px;
   line-height: 30px;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
-  #life #my-focus #life-content p {
+  #life #my-focus .life-content p {
     font-size: 16px;
   }
 }
