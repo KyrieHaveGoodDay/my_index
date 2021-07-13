@@ -651,7 +651,7 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: black;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 24px;
 }
 
@@ -1260,12 +1260,12 @@ body {
 }
 
 #about-kyrie .box1 span {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
 }
 
 #about-kyrie .box1 span a {
   text-decoration: none;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
 }
 
 #about-kyrie .about-title {
@@ -1348,11 +1348,11 @@ body {
 }
 
 #about-kyrie .about-box h4 {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
 }
 
 #about-kyrie .about-box p {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -1365,23 +1365,14 @@ body {
   margin-bottom: 10px;
 }
 
-#about-kyrie #skills .about-skill {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
 #about-kyrie #skills .about-skill .skill-box h2 {
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
 }
 
 #about-kyrie #skills .about-skill .skill-box hr {
-  width: 200px;
   height: 5px;
   background-color: #a54125;
-  border: none;
   margin: 0 auto;
 }
 
@@ -1391,16 +1382,23 @@ body {
   }
 }
 
-#about-kyrie #skills .about-skill .skill-box ul li {
-  list-style: square;
-  font-family: "Noto Sans TC", sans-serif;
-  margin-left: 80px;
+#about-kyrie #skills .about-skill .skill-box ol {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 @media screen and (max-width: 767px) {
-  #about-kyrie #skills .about-skill .skill-box ul li {
-    margin-left: 50px;
+  #about-kyrie #skills .about-skill .skill-box ol {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
+}
+
+#about-kyrie #skills .about-skill .skill-box ol li {
+  display: inline-block;
+  font-family: "Noto Serif TC", serif;
 }
 
 #icon {

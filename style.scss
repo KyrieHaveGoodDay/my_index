@@ -577,7 +577,7 @@ body {
         text-decoration: none;
         transition: 0.5s;
         color: black;
-        font-family: $main_title;
+        font-family: $main_content;
         font-size: 24px;
 
         &:hover {
@@ -975,11 +975,11 @@ body {
             }
         }
         span {
-            font-family: $main_title;
+            font-family: $main_content;
         }
         span a {
             text-decoration: none;
-            font-family: $main_title;
+            font-family: $main_content;
         }
     }
 
@@ -1046,10 +1046,10 @@ body {
             font-family: $main_title;
         }
         h4 {
-            font-family: $main_title;
+            font-family: $main_content;
         }
         p {
-            font-family: $main_title;
+            font-family: $main_content;
             //手機
             @media screen and (max-width: $phone) {
                 width: 200px;
@@ -1062,32 +1062,41 @@ body {
         margin-bottom: 10px;
 
         .about-skill {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
             .skill-box {
                 h2 {
                     text-align: center;
                     font-family: $main_title;
                 }
                 hr {
-                    width: 200px;
+                    // width: 200px;
                     height: 5px;
                     background-color: $main_color;
-                    border: none;
+                    // border: none;
                     margin: 0 auto;
                     //手機
                     @media screen and (max-width: $phone) {
                         width: 100%;
                     }
                 }
-                ul {
+                ol {
+                    display: grid;
+                    grid-template-columns:repeat(3,1fr );
+                    //手機
+                    @media screen and (max-width: $phone) {
+                        grid-template-columns:repeat(2,1fr );   
+                        // display: block;
+                    }
                     li {
-                        list-style: square;
-                        font-family: $main_title;
-                        margin-left: 80px;
+                        display: inline-block;
+                        // list-style: square;
+                        font-family: $main_content;
+                        // margin-left: 80px;
                         //手機
                         @media screen and (max-width: $phone) {
-                            margin-left: 50px;
+                            // display: block;
+                            // width: 100%;
                         }
                     }
                 }
