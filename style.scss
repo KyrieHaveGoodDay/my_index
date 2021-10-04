@@ -237,15 +237,16 @@ body {
             ol {
                 margin-top: 10px;
                 li {
-                    font-family: $main_content;
+                    // font-family: $main_content;
                     // font-weight: bolder;
+                    font-weight: 900;
                     //手機
                     @media screen and (max-width: $phone) {
                         font-size: 16px;
                     }
                     a {
                         text-decoration: none;
-                        font-family: $main_content;
+                        // font-family: $main_content;
                     }
                 }
             }
@@ -253,7 +254,8 @@ body {
                 margin-top: 50px;
                 line-height: 30px;
                 font-size: 18px;
-                font-family: $main_content;
+                font-weight: 900;
+                // font-family: $main_content;
                 //手機
                 @media screen and (max-width: $phone) {
                     font-size: 16px;
@@ -295,6 +297,7 @@ body {
             background-image: url(./img/focus.jpg);
             background-size: cover;
             box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+            
             //平板
             @media screen and (max-width: $ipad) {
                 margin: 0 auto;

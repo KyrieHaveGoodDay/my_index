@@ -238,7 +238,7 @@ body {
 }
 
 #life #my-life .life-content ol li {
-  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 767px) {
@@ -249,14 +249,13 @@ body {
 
 #life #my-life .life-content ol li a {
   text-decoration: none;
-  font-family: "Noto Serif TC", serif;
 }
 
 #life #my-life .life-content p {
   margin-top: 50px;
   line-height: 30px;
   font-size: 18px;
-  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 767px) {
