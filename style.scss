@@ -850,6 +850,8 @@ body {
     }
     .web-h3 {
         font-family: $main_title;
+        margin-bottom: 10px;
+        transition: 0.5s;
         &:hover {
             color: $main_color;
         }
