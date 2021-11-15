@@ -31,7 +31,8 @@ body {
   height: 80px;
   top: 50%;
   left: 50%;
-  margin-top: -15px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #card {
@@ -450,7 +451,7 @@ body {
   #introduction {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "card-right" "card-left";
+        grid-template-areas: "card-right" "card-left";
   }
 }
 
