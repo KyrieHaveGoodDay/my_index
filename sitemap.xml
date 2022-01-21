@@ -6,7 +6,10 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+ <url>
+    <loc>https://kyriehavegoodday.github.io/my_index/</loc>
+    <lastmod>2022-01-21</lastmod>
+  </url>
 
 
 </urlset>
