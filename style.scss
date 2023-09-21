@@ -29,6 +29,7 @@ $phone: 767px;
     //手機
     @media screen and (max-width: $phone) {
         font-size: 25px;
+        text-align: center;
     }
 }
 
@@ -400,6 +401,12 @@ body {
 }
 
 //作品集頁面
+.webTitle{    
+    display: block !important;
+    h1{
+        @include title;
+    }
+}
 #introduction {
     //height: 500px;
     // border:5px #FFAC55 solid;
@@ -826,7 +833,7 @@ body {
 
 // 網頁設計頁面
 
-#official {
+.official {
     width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

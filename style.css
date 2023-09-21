@@ -353,6 +353,29 @@ body {
   background-size: cover;
 }
 
+.webTitle {
+  display: block !important;
+}
+.webTitle h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  transition: 0.5s;
+}
+.webTitle h1:hover {
+  color: rgb(165, 65, 37);
+}
+@media screen and (max-width: 1024px) {
+  .webTitle h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .webTitle h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
 #introduction {
   width: 1200px;
   background: white;
@@ -583,6 +606,7 @@ body {
 @media screen and (max-width: 767px) {
   #work #graphic-design h1 {
     font-size: 25px;
+    text-align: center;
   }
 }
 #work #graphic-design #img-box {
@@ -634,6 +658,7 @@ body {
 @media screen and (max-width: 767px) {
   #work #poster h1 {
     font-size: 25px;
+    text-align: center;
   }
 }
 #work #poster #img-box {
@@ -685,6 +710,7 @@ body {
 @media screen and (max-width: 767px) {
   #work #exquisite h1 {
     font-size: 25px;
+    text-align: center;
   }
 }
 #work #exquisite #img-box {
@@ -747,6 +773,7 @@ body {
 @media screen and (max-width: 767px) {
   #work #product h1 {
     font-size: 25px;
+    text-align: center;
   }
 }
 #work #product #img-box {
@@ -798,6 +825,7 @@ body {
 @media screen and (max-width: 767px) {
   #work #VI h1 {
     font-size: 25px;
+    text-align: center;
   }
 }
 #work #VI #logo-title {
@@ -851,41 +879,41 @@ body {
   border-radius: 5px;
 }
 
-#official {
+.official {
   width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 20px auto;
 }
 @media screen and (max-width: 1024px) {
-  #official {
+  .official {
     width: auto;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 767px) {
-  #official {
+  .official {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-#official .web-title {
+.official .web-title {
   text-align: center;
 }
-#official .web-img {
+.official .web-img {
   overflow: hidden;
 }
-#official .web-img img {
+.official .web-img img {
   width: 300px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#official .web-h3 {
+.official .web-h3 {
   font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 10px;
   transition: 0.5s;
 }
-#official .web-h3:hover {
+.official .web-h3:hover {
   color: rgb(165, 65, 37);
 }
 
