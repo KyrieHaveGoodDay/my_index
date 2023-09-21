@@ -71,7 +71,7 @@ body {
 #card {
     width: 100%;
     height: 100vh;
-    background-image: url(./img/kyrie1.PNG);
+    background-image: url('https://kyriehavegoodday.github.io/myindexImg/img/kyrie1.PNG');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -204,7 +204,7 @@ body {
         #life-img {
             width: 500px;
             height: 500px;
-            background-image: url(./img/life.jpg);
+            background-image: url('https://kyriehavegoodday.github.io/myindexImg/img/life.jpg');
             background-size: cover;
             background-position: -90px 0;
             box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
@@ -230,6 +230,7 @@ body {
                 text-align: center;
                 font-family: $main_title;
                 font-size: 36px;
+                font-weight: 400;
                 //手機
                 @media screen and (max-width: $phone) {
                     font-size: 30px;
@@ -296,7 +297,7 @@ body {
         #life-img {
             width: 500px;
             height: 500px;
-            background-image: url(./img/focus.jpg);
+            background-image: url('https://kyriehavegoodday.github.io/myindexImg/img/focus.jpg');
             background-size: cover;
             box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
             
@@ -322,6 +323,7 @@ body {
                 text-align: center;
                 font-family: $main_title;
                 font-size: 36px;
+                font-weight: 400;
                 //手機
                 @media screen and (max-width: $phone) {
                     font-size: 30px;
