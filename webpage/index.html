@@ -139,7 +139,7 @@
             <h3 class="web-h3">台灣旅遊景點導覽</h3>
         </div>
 
-        
+
     </div>
 
     <footer>
@@ -147,7 +147,7 @@
             <a href="../index.html">
                 <h3>KyrieHaveGoodDay</h3>
             </a>
-            <p>Copyright &copy;2021 KyrieHaveGoodDay</p>
+            <p>Copyright &copy;<span id="dateYear"></span> KyrieHaveGoodDay</p>
         </div>
     </footer>
 
@@ -161,6 +161,8 @@
                 $(".loading-wrapper").fadeOut(500);
             }, 1000);
         });
+        const today = new Date();
+        $('#dateYear').text(today.getFullYear())
     </script>
     <!-- JS CDN -->
     <script src="https://kyriehavegoodday.github.io/GoTo_Element/goto.js"></script>

@@ -6,16 +6,25 @@
     <title>KyrieHaveGoodDay</title>
     <meta name="google-site-verification" content="LU_mcx8f5sqwGngFRthvnUaUbxedzuI4mROfBeMnb40" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no">
-    
+
     <meta name="title" content="KyrieHaveGoodDay">
-    <meta name="description"  content="我是前端網頁設計師Kyrie，任何事情只要經過一萬個小時的淬鍊，都能到達巔峰" />
-    <!-- <meta name="robots" content="noindex,nofollow"> -->
-    
+    <meta name="description" content="我是前端網頁設計師Kyrie，任何事情只要經過一萬個小時的淬鍊，都能到達巔峰" />
+     <!-- keywords 關鍵字 -->
+     <meta name="keywords" content="作品、履歷、設計" />
+     <!-- Author / Copyright 作者與版權 -->
+     <meta name="author" content="Kyrie-凱瑞" />
+     <meta name="copyright" content="Kyrie-凱瑞版權所有、轉載必究" />
+     <meta property="og:title" content="Kyrie-凱瑞" />
+     <!-- description 描述 -->
+     <meta property="og:description" content="前端網頁設計師Kyrie" />
+     <meta property="og:site_name" content="Kyrie-凱瑞" />
+     <meta property="og:type" content="website" />
+
 
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
-   
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N89E0Q61W8"></script>
@@ -47,7 +56,7 @@
 
         <div id="content">
 
-            <a href="./portfolio/">
+            <a href="./portfolio/" title="作品">
                 <h2>把時間花在哪裡，成就就在哪裡</h2>
                 <hr>
                 <p>我是前端網頁設計師Kyrie</br>
@@ -118,7 +127,7 @@
             <a href="./index.html">
                 <h3>KyrieHaveGoodDay</h3>
             </a>
-            <p>Copyright &copy;2021 KyrieHaveGoodDay</p>
+            <p>Copyright &copy;<span id="dateYear"></span> KyrieHaveGoodDay</p>
         </div>
     </footer>
 
@@ -135,6 +144,8 @@
             setTimeout(function () {
                 $(".loading-wrapper").fadeOut(500);
             }, 1000);
+            const today = new Date();
+            $('#dateYear').text(today.getFullYear())
         });
     </script>
 

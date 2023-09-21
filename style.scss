@@ -185,7 +185,7 @@ body {
         margin: 0 auto;
         margin-bottom: 30px;
         //  border:5px #FFAC55 solid;
-        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         padding: 20px;
         background-color: white;
@@ -275,7 +275,7 @@ body {
         margin: 0 auto;
         margin-bottom: 30px;
         // border:5px #FFAC55 solid;
-        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         padding: 20px;
         background-color: white;
@@ -865,7 +865,7 @@ body {
     margin: 20px auto;
     display: grid;
     grid-template-columns: 250px 650px;
-    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     grid-template-areas: "about-left about-right";
     //平板
@@ -1137,6 +1137,10 @@ body {
     right: 30px;
     bottom: 30px;
     cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(#ccc,0.7);
+    padding: 5px;
 }
 
 @keyframes kyrieText {
