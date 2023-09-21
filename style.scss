@@ -1098,12 +1098,8 @@ body {
                 }
                 ol {
                     display: grid;
-                    grid-template-columns:repeat(3,1fr );
-                    //手機
-                    @media screen and (max-width: $phone) {
-                        grid-template-columns:repeat(2,1fr );   
-                        // display: block;
-                    }
+                    grid-template-columns:repeat(1,1fr );
+                    
                     li {
                         display: inline-block;
                         // list-style: square;
@@ -1113,6 +1109,7 @@ body {
                         @media screen and (max-width: $phone) {
                             // display: block;
                             // width: 100%;
+                            padding-left: 10px;
                         }
                     }
                 }
